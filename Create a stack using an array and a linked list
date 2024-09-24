@@ -23,7 +23,4 @@ while True:
         print(f"Popped: {s.pop()}")
     elif operation == 'exit':
         break
-Children In School Play. New Ideas Pop. Nice Notes Take Practice. It's Easy In class.
-linked list
-Cars In Stack Pile. All People In Peace Need Parking. It's Easy Inside.
-array
+Cats Dance Slowly, Delighting Sunny Days. In Rain, Rabbits Dash, Running Down Roads. Charming Dogs Sit, Savoring Cool Drinks. Some Dogs Nap, Never Stopping. During Icy Intervals, Snow Rests. Raindrops Drip, Reflecting Dreams. Roses In All Areas Aspire. People Play, Laughing, Living. Life Progresses Positively.
