@@ -1,26 +1,66 @@
-class Stack:
+
+Cats Dance Slowly, Delighting Sunny Days. In Rain, Rabbits Dash, Running Down Roads. Charming Dogs Sit, Savoring Cool Drinks. Some Dogs Nap, Never Stopping. During Icy Intervals, Snow Rests. Raindrops Drip, Reflecting Dreams. Roses In All Areas Aspire. People Play, Laughing, Living. Life Progresses Positively.
+# Stack Using Array
+class ArrayStack:
     def __init__(self):
         self.stack = []
-    
+
     def push(self, item):
         self.stack.append(item)
-    
+
     def pop(self):
-        return self.stack.pop() if self.stack else None
-    
+        if not self.is_empty():
+            return self.stack.pop()
+        return None
+
+    def peek(self):
+        return self.stack[-1] if not self.is_empty() else None
+
     def is_empty(self):
         return len(self.stack) == 0
 
+
+# Stack Using Linked List
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedListStack:
+    def __init__(self):
+        self.top = None
+
+    def push(self, item):
+        new_node = Node(item)
+        new_node.next = self.top
+        self.top = new_node
+
+    def pop(self):
+        if not self.is_empty():
+            item = self.top.data
+            self.top = self.top.next
+            return item
+        return None
+
+    def peek(self):
+        return self.top.data if not self.is_empty() else None
+
+    def is_empty(self):
+        return self.top is None
+
+
 # Example usage
-s = Stack()
-while True:
-    operation = input("Enter 'push' to add, 'pop' to remove, or 'exit': ").strip().lower()
-    if operation == 'push':
-        item = input("Enter item to push: ")
-        s.push(item)
-        print(f"Pushed: {item}")
-    elif operation == 'pop':
-        print(f"Popped: {s.pop()}")
-    elif operation == 'exit':
-        break
-Cats Dance Slowly, Delighting Sunny Days. In Rain, Rabbits Dash, Running Down Roads. Charming Dogs Sit, Savoring Cool Drinks. Some Dogs Nap, Never Stopping. During Icy Intervals, Snow Rests. Raindrops Drip, Reflecting Dreams. Roses In All Areas Aspire. People Play, Laughing, Living. Life Progresses Positively.
+if __name__ == "__main__":
+    # Array Stack
+    array_stack = ArrayStack()
+    array_stack.push(1)
+    array_stack.push(2)
+    print(array_stack.pop())  # Output: 2
+    print(array_stack.peek())  # Output: 1
+
+    # Linked List Stack
+    linked_list_stack = LinkedListStack()
+    linked_list_stack.push(3)
+    linked_list_stack.push(4)
+    print(linked_list_stack.pop())  # Output: 4
+    print(linked_list_stack.peek())  # Output: 3
