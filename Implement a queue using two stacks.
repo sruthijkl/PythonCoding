@@ -1,0 +1,26 @@
+class QueueUsingStacks:
+    def __init__(self):
+        self.stack1 = []
+        self.stack2 = []
+    
+    def enqueue(self, item):
+        self.stack1.append(item)
+    
+    def dequeue(self):
+        if not self.stack2:
+            while self.stack1:
+                self.stack2.append(self.stack1.pop())
+        return self.stack2.pop() if self.stack2 else None
+
+# Example usage
+q = QueueUsingStacks()
+while True:
+    operation = input("Enter 'enqueue' to add, 'dequeue' to remove, or 'exit': ").strip().lower()
+    if operation == 'enqueue':
+        item = input("Enter item to enqueue: ")
+        q.enqueue(item)
+        print(f"Enqueued: {item}")
+    elif operation == 'dequeue':
+        print(f"Dequeued: {q.dequeue()}")
+    elif operation == 'exit':
+        break
