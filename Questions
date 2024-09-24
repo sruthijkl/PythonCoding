@@ -1,0 +1,27 @@
+Sorting: Implement quicksort and mergesort algorithms.
+Binary Search: Write a function to perform binary search on a sorted array.
+Fibonacci Sequence: Use recursion and dynamic programming to calculate Fibonacci numbers.
+Dynamic Programming
+Longest Common Subsequence: Write a function to find the longest common subsequence of two strings.
+0/1 Knapsack Problem: Solve the 0/1 knapsack problem using dynamic programming.
+Graphs
+DFS and BFS: Implement depth-first search and breadth-first search on a graph.
+Shortest Path: Write Dijkstra's algorithm to find the shortest path in a weighted graph.
+String Manipulation
+Anagram Check: Write a function to check if two strings are anagrams.
+Palindrome Check: Implement a function to check if a string is a palindrome.
+Complexity Analysis
+Time Complexity: Analyze the time complexity of common sorting algorithms.
+Space Complexity: Discuss the space complexity of different data structures (arrays vs. linked lists).
+SQL
+Basic Queries: Write SQL queries to select, insert, update, and delete records in a table.
+Join Operations: Explain and implement various JOIN operations (INNER JOIN, LEFT JOIN).
+Object-Oriented Programming
+Class Design: Design a class for a library system with books and members.
+Inheritance: Create a class hierarchy with a base class and derived classes.
+Concurrency
+Producer-Consumer Problem: Implement a simple producer-consumer scenario using threads.
+Deadlock Detection: Explain deadlock and write a function to detect it.
+System Design
+Design a URL Shortener: Outline the architecture and components.
+Design an E-commerce System: Describe the database schema and API endpoints.
