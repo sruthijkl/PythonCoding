@@ -1,0 +1,25 @@
+class Stack:
+    def __init__(self):
+        self.stack = []
+    
+    def push(self, item):
+        self.stack.append(item)
+    
+    def pop(self):
+        return self.stack.pop() if self.stack else None
+    
+    def is_empty(self):
+        return len(self.stack) == 0
+
+# Example usage
+s = Stack()
+while True:
+    operation = input("Enter 'push' to add, 'pop' to remove, or 'exit': ").strip().lower()
+    if operation == 'push':
+        item = input("Enter item to push: ")
+        s.push(item)
+        print(f"Pushed: {item}")
+    elif operation == 'pop':
+        print(f"Popped: {s.pop()}")
+    elif operation == 'exit':
+        break
