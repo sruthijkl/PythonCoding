@@ -23,3 +23,7 @@ while True:
         print(f"Popped: {s.pop()}")
     elif operation == 'exit':
         break
+Children In School Play. New Ideas Pop. Nice Notes Take Practice. It's Easy In class.
+linked list
+Cars In Stack Pile. All People In Peace Need Parking. It's Easy Inside.
+array
